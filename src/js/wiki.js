@@ -1,8 +1,14 @@
 console.log(
   "----------------------- this is start of extension --------------------"
 );
-document.querySelector("#mw-navigation").style.display = "none";
-// document.querySelector("#mw-panel").style.display = "none";
+// document.querySelector("#mw-navigation").style.display = "none";
+const el = document.querySelector(".vector-search-box-input").style;
+el.padding = "11px";
+el.borderRadius = "10px";
+el.fontSize = "16px";
+
+const tool_panel = document.querySelector("#mw-panel");
+tool_panel.style.left = "-200px";
 
 const content = document.querySelector("#content");
 const contentStyle = content.style;
@@ -52,9 +58,20 @@ contentbtn.addEventListener("click", () => {
   }
 });
 
-content.addEventListener("click", () => {});
+const tool_btn = document.createElement("div");
+tool_btn.classList.add("tool_btn");
+
+tool_btn.addEventListener("click", () => {
+  if (tool_panel.style.left === "0px") {
+    tool_panel.style.left = "-200px";
+  } else {
+    tool_panel.style.left = "0px";
+    // document.body.appendChild(backgray);
+  }
+});
+
 document.body.appendChild(contentbtn);
-console.log(contentbtn);
+document.body.appendChild(tool_btn);
 
 console.log(
   "--------------------- this is end of extension -------------------------"

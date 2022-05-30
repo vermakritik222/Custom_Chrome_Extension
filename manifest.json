@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "allInOneExtension",
+  "description": "",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "logo.png",
+    "default_popup": "./src/index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.wikipedia.org/*"],
+      "js": ["./src/js/wiki.js"],
+      "css": ["./src/css/wiki.css"]
+    }
+  ],
+  "chrome_url_overrides": {
+    "newtab": "./src/tab.html"
+  },
+  "permissions": ["tabs"]
+}

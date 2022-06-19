@@ -1,25 +1,26 @@
 html {
   scroll-behavior: smooth;
 }
+
 #mw-head {
   z-index: 9 !important;
   padding-bottom: 15px;
 }
-#mw-head > #p-personal {
-  /* display: none; */
-}
+
 #mw-head > #left-navigation {
   margin-top: 15px;
-  /* float: right; */
 }
+
 #mw-head > #left-navigation > nav > div > ul > li {
   background: transparent;
   border: none;
 }
+
 #mw-head > #right-navigation {
   margin-top: 15px !important;
   float: left !important;
 }
+
 #mw-head > #right-navigation > nav > div > ul > li {
   background: transparent;
   border: none;
@@ -52,7 +53,7 @@ html {
   transition: left 500ms ease-in;
   position: fixed;
   top: 10px;
-  left: -39%;
+  left: -80%;
   border-radius: 10px;
 }
 
@@ -75,6 +76,7 @@ html {
   cursor: pointer;
   border-radius: 20px;
 }
+
 .tool_btn {
   height: 35px;
   width: 79px;
@@ -120,4 +122,79 @@ html {
   padding-bottom: 10px !important;
   padding-top: 10px !important;
 }
-/*# sourceMappingURL=main.css.map */
+
+/* -------------------YouTube-------------------------------- */
+
+ytd-thumbnail.ytd-rich-grid-media:before {
+  border-radius: 15px !important;
+}
+.yt-img-shadow {
+  border-radius: 15px !important;
+}
+ytd-thumbnail-overlay-time-status-renderer {
+  border-radius: 10px !important;
+  padding: 7px !important;
+  margin-right: 9px !important;
+  margin-bottom: 4px !important;
+}
+
+#progress {
+  border-radius: 14px !important;
+}
+ytd-thumbnail-overlay-resume-playback-renderer {
+  border-radius: 14px !important;
+  width: 92% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+ytd-rich-item-renderer {
+  box-sizing: border-box !important;
+  background: #2a2929;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+ytd-video-renderer {
+  margin: 35px 0px !important;
+  background: #313131 !important;
+  padding: 15px !important;
+  border-radius: 15px;
+}
+
+#dismissible {
+  align-items: center !important;
+}
+
+#left-section,
+#right-section,
+#header {
+  background: #313131;
+}
+
+ytd-compact-video-renderer {
+  margin: 20px 0px;
+  background: #31313145;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+ytd-compact-playlist-renderer {
+  margin: 20px 0px;
+  background: #31313145;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+ytd-compact-radio-renderer {
+  margin: 20px 0px;
+  background: #31313145;
+  padding: 10px;
+}
+
+ytd-post-renderer {
+  border-radius: 15px;
+}
+#thumbnail-container {
+  border-radius: 20px;
+}

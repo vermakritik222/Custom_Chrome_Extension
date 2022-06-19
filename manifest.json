@@ -9,13 +9,22 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://*.wikipedia.org/*"],
-      "js": ["./src/js/wiki.js"],
-      "css": ["./src/css/wiki.css"]
+      "matches": [
+        "https://*.wikipedia.org/*",
+        "https://www.youtube.com/*"
+      ],
+      "js": [
+        "./src/js/wiki.js"
+      ],
+      "css": [
+        "./src/css/wiki.css"
+      ]
     }
   ],
   "chrome_url_overrides": {
     "newtab": "./src/tab.html"
   },
-  "permissions": ["tabs"]
+  "permissions": [
+    "tabs"
+  ]
 }
